@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cho tam giác ABC vuông tại A có cạnh AB = 9cm, AC = 8cm, Tính BC</title>
-    <!-- Font Awesome Icons (tuỳ chọn) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -17,7 +16,6 @@
         body {
             min-height: 100vh;
             background: radial-gradient(circle at 30% 10%, #0d0b1a 0%, #05030c 100%);
-            /* hiệu ứng sao galaxy */
             position: relative;
             display: flex;
             align-items: center;
@@ -26,7 +24,6 @@
             overflow-x: hidden;
         }
 
-        /* lớp sao lấp lánh – dark galaxy */
         body::before {
             content: '';
             position: absolute;
@@ -49,7 +46,6 @@
             pointer-events: none;
         }
 
-        /* thêm tinh vân mờ ảo */
         body::after {
             content: '';
             position: absolute;
@@ -83,7 +79,6 @@
                         0 0 60px rgba(190, 60, 255, 0.4);
         }
 
-        /* avatar + tên */
         .profile {
             display: flex;
             flex-direction: column;
@@ -110,17 +105,13 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: #0b0715 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="40" r="22" fill="%23b77aff" opacity="0.9"/><circle cx="50" cy="50" r="36" fill="none" stroke="%23d9a6ff" stroke-width="2" opacity="0.7"/><text x="50" y="58" font-size="38" text-anchor="middle" fill="%23ffffff" font-family="Arial" font-weight="bold">P</text></svg>') center/cover no-repeat;
-            background-size: 70%;
-            background-position: center 55%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            background: #150b22;
             border: 2px solid rgba(255, 255, 255, 0.2);
-            background-color: #150b22;
         }
 
-        /* Tên chủ tiktok – gradient hồng tím */
         .tiktok-name {
             font-size: 2.2rem;
             font-weight: 800;
@@ -158,7 +149,6 @@
             box-shadow: 0 0 15px rgba(160, 0, 255, 0.3);
         }
 
-        /* 2 mục shop */
         .shop-items {
             display: flex;
             flex-direction: column;
@@ -291,7 +281,6 @@
             opacity: 1;
         }
 
-        /* footer nhỏ */
         .footer-note {
             margin-top: 28px;
             text-align: center;
@@ -309,7 +298,6 @@
             filter: drop-shadow(0 0 8px #b44eff);
         }
 
-        /* responsive */
         @media (max-width: 480px) {
             .card {
                 padding: 28px 18px 34px;
@@ -349,10 +337,9 @@
 </head>
 <body>
     <div class="card">
-        <!-- Avatar & Tên TikTok -->
         <div class="profile">
             <div class="avatar-wrapper">
-                <div class="avatar"></div>
+                <img class="avatar" src="avatartiktok.jpg" alt="px_rbx avatar">
             </div>
             <div class="tiktok-name">
                 <i class="fab fa-tiktok"></i> px_rbx
@@ -362,9 +349,7 @@
             </span>
         </div>
 
-        <!-- 2 mục shop -->
         <div class="shop-items">
-            <!-- Mục 1: Vượt Link Lấy Macro (free) -->
             <a href="https://link4m.org/nsYcu2q" target="_blank" rel="noopener noreferrer" class="shop-card">
                 <div class="shop-left">
                     <div class="icon-box">
@@ -385,7 +370,6 @@
                 </div>
             </a>
 
-            <!-- Mục 2: Mua Full File + HDSD + Config Bán Đồ 7k -->
             <a href="https://www.tiktok.com/@px_rbx" target="_blank" rel="noopener noreferrer" class="shop-card">
                 <div class="shop-left">
                     <div class="icon-box">
@@ -393,7 +377,7 @@
                     </div>
                     <div class="shop-info">
                         <h3>
-                            Mua Full File + HDSD + Config
+                            Mua Full File + HDSD + Config Bán Đồ
                             <span class="price-tag">7k</span>
                         </h3>
                         <div class="shop-desc">
@@ -407,7 +391,6 @@
             </a>
         </div>
 
-        <!-- dòng trang trí -->
         <div class="footer-note">
             <i class="fas fa-star"></i>
             <span>tiktok : @px_rbx</span>
